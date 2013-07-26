@@ -2,6 +2,8 @@
 
 class AdminController extends Controller
 {
+	public $layout="admin";
+	
 	public function actionAppraisers()
 	{
 		$this->render('appraisers');
@@ -89,6 +91,53 @@ class AdminController extends Controller
 			}
 			else {
 				$this->render('parts',array('model'=>$model));
+			}
+		}
+		else $this->redirect(Yii::app()->request->baseUrl);
+	}
+	
+	public function actionCar_parts(){
+		
+		if(Yii::app()->user->id == 1){
+			$parts = new CarBody();
+			$user = new User();
+			$user_id = $user->findByAttributes(array('username'=>Yii::app()->user->id));
+			
+			if(isset($_GET['add'])){
+				$part=new CarBody('add');
+				if(isset($_POST['CarBody']))
+				{
+					$parts->attributes=$_POST['CarBody'];
+					if($parts->validate())
+					{
+						$parts->save();
+						$this->redirect('admin/car_parts');
+						return;
+					}
+				}
+				$this->render('car_parts_add',array('model'=>$parts, 'user_id'=>$user_id));
+			}
+			else if(isset($_GET['edit']) && $_GET['edit']>0){
+				if(isset($_POST['CarBody']))
+				{
+					$parts->attributes=$_POST['CarBody'];
+					if($parts->validate())
+					{ 
+						$id = $_POST['CarBody']['id'];
+						$parts->updateByPK($id,array('name'=>$parts->name, 'category'=>$parts->category));
+						$this->redirect('admin/car_parts');
+						return;
+					}
+				}
+				$this->render('car_parts_edit',array('model'=>$parts->findByPK($_GET['edit'])));
+			}
+			else if(isset($_GET['remove']) && $_GET['remove']>0){
+				$parts->deleteByPK($_GET['remove']);
+				$this->redirect('admin/car_parts');
+				return;
+			}
+			else{
+				$this->render('car_parts',array('data'=>$parts->findAll()));		
 			}
 		}
 		else $this->redirect(Yii::app()->request->baseUrl);

@@ -94,7 +94,10 @@ class SiteController extends Controller
 			// validate user input and redirect to the previous page if valid
 			if($model->check($_POST['User']['password'], $_POST['User']['username'])){
 				$model->login();
-				$this->redirect(Yii::app()->user->returnUrl);
+				if(Yii::app()->user->id==1)
+					$this->redirect(array('admin/index'));
+				if(Yii::app()->user->id==3)
+					$this->redirect('appraiser');
 			}
 		}
 		// display the login form
@@ -114,17 +117,29 @@ class SiteController extends Controller
 		// collect user input data
 		if(isset($_POST['User']))
 		{
-			$model->attributes=$_POST['User'];
-			
-			//$model->password = $model->hash($_POST['User']['password'],$_POST['User']['username']);
-			// validate user input and redirect to the previous page if valid
-			if($_POST['User']['username']!="" && $_POST['User']['email']!=""){
-				$model->save();
-				$this->redirect(Yii::app()->user->returnUrl);
+			$_POST['User']['username']=$_POST['User']['email'];
+			$record=$model->find(array(
+			  'select'=>'email',
+			  'condition'=>'email=:email',
+			  'params'=>array(':email'=>$_POST['User']['email']))
+			); 
+
+			if(!empty($record)) {
+				$error = 'Email already exist!';
+			}
+			else {
+				$model->attributes=$_POST['User'];			
+				
+				//$model->password = $model->hash($_POST['User']['password'],$_POST['User']['username']);
+				// validate user input and redirect to the previous page if valid
+				if($_POST['User']['email']!=""){
+					$model->save();
+					$this->redirect(Yii::app()->user->returnUrl);
+				}
 			}
 		}
 		// display the login form
-		$this->render('register',array('model'=>$model));
+		$this->render('login',array('model'=>$model,'error'=>$error));
 	}
 
 	/**
@@ -134,5 +149,12 @@ class SiteController extends Controller
 	{
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
+	}
+	
+	public function actionAppraiser(){
+		if(Yii::app()->user->id==1 || Yii::app()->user->id==3)
+			$this->render('appraiser');
+		else 
+			$this->redirect(Yii::app()->homeUrl);
 	}
 }

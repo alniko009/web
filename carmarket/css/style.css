@@ -1,0 +1,1413 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+.cleared
+{
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+body,p,div,span
+{
+	font-family:arial;
+}
+/*//////////////////////////////////////////HEADER CSS*/
+.eHeaderCover
+{
+	height:200px;
+	width: 100%;
+	background-color:#102131;
+}
+
+.eHeader
+{
+    margin: 0 auto;
+    width: 960px;
+	height:200px;
+	background-image: url("../images/eHeaderImg.png");
+    background-repeat: no-repeat;
+}
+
+.eLogin {
+    color: #FFFFFF;
+    float: right;
+    text-align: right;
+    width: 100%;
+	margin-top: 10px;
+}
+
+.eLogin  a{
+    color: #FFFFFF;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.eHeaderDetails
+{
+	margin-top: 40px;
+    width: 100px;
+	float: left;
+}
+
+.eHeaderDetails p
+{
+	color:#fff;
+	text-align: left;
+}
+
+.eLogo {
+    background-image: url("../images/elogo.png");
+    background-repeat: no-repeat;
+    float: right;
+    height: 30px;
+    margin-top: 118px;
+    width: 252px;
+}
+
+
+
+.HeaderCover
+{
+	background-image: url("../images/HeaderCoverBg.png");
+    background-repeat: repeat-x;
+    height: 200px;
+	direction: rtl;
+}
+
+.Header
+{
+	background-image: url("../images/HeaderBg.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    margin: 0 auto;
+    width: 960px;
+	position:relative;
+}
+
+.HeaderTop
+{
+    height: 20px;
+}
+
+.TopMenu
+{
+	float: left;
+}
+
+.TopMenu ul
+{
+	margin: 0;
+    padding: 0;
+}
+
+.TopMenu ul li
+{
+	float: right;
+    list-style: none outside none;
+	color: #FFFFFF;
+}
+
+.TopMenu ul li a
+{
+	color: #FFFFFF;
+    text-decoration: none;
+	padding: 0 10px;
+}
+
+.HeaderLogo
+{
+	background-image: url("../images/HeaderLogo.png");
+    background-repeat: no-repeat;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 317px;
+}
+   
+.SummeryText
+{
+	color: #FFFFFF;
+    position: absolute;
+    right: 0;
+    top: 120px;
+}
+
+.MainMenu
+{
+	height: 46px;
+    position: absolute;
+    top: 152px;
+    width: 570px;
+}
+
+.MenuRightBg
+{
+	background-image: url("../images/MenuBgRight.png");
+    background-repeat: no-repeat;
+    float: right;
+    height: 50px;
+	background-position: right top;
+}
+
+.MenuLeftBg
+{
+	background-image: url("../images/MenuBgLeft.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 50px;
+}	
+
+.MenuMiddleBg
+{
+	background-image: url("../images/MenuBgMiddle.png");
+    background-repeat: repeat-x;
+    margin: 0 10px;
+}
+
+.MainMenu a
+{
+	color: #FFFFFF;
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+}
+
+#tabs ul li a:hover
+{
+	color:#fff;
+}
+/*//////////////////////////////////END OF HEADER CSS*/
+/*///////////////////////////////////FOOTER CSS*/
+.eFooterCover
+{
+	background-image: url("../images/FooterBg.png");
+    background-repeat: repeat-x;
+    height: 168px;
+}
+
+.eFooter
+{
+    margin: 0 auto;
+    width: 960px;
+	height:168px;
+}
+
+.eFooterMenu
+{
+
+}
+
+.eFooterFB
+{
+    background-image: url("../images/eFBbg.png");
+    float: left;
+    height: 20px;
+    margin-top: 16px;
+    width: 70px;
+}
+
+.eFooterCredits
+{
+    float: left;
+    height: 12px;
+    margin-top: 70px;
+    width: 270px;
+}
+
+.eFooterCredits a
+{
+    color: black;
+    text-decoration: none;
+}
+/*///////////////////////////////////END OF FOOTER CSS*/
+.eMain {
+    margin: 0 auto;
+    width: 960px;
+}
+.eTopMain
+{
+    height: 30px;
+     margin: 10px auto 12px;
+    width: 941px;
+}
+
+.eToReportsLink
+{
+	float: left;
+}
+
+
+.SettingsLink img {
+    margin-top: -3px;
+}
+
+.eTabTitle
+{
+	color:#00679D;
+    float: right;
+    font-size: 24px;
+    height: 28px;
+    text-align: right;
+    width: 500px;
+	direction: rtl;
+}
+/*//////////////////////////////TABS*/
+/*///////////////////////FIX TABS AT THE TOP OF THE PAGE WHEN SCROLL,NOT FOR IFRAME*/
+.fixedMenu
+{
+	 position: fixed;
+	 top: 0;
+}
+/*///////////////////////END OF FIX TABS AT THE TOP OF THE PAGE WHEN SCROLL,NOT FOR IFRAME*/
+#tabs {
+    direction: rtl;
+    margin-bottom: 40px;
+    text-align: right;
+	background-color: transparent;
+	border: medium none;
+}
+
+.ui-tabs .ui-tabs-nav li {
+    background-image: url("images/TAB_greySmall.png");
+    background-repeat: no-repeat;
+    border-bottom-width: 0;
+    float: right !important;
+    height: 70px;
+    left: 0px;
+    list-style: none outside none;
+    margin: 16px 0.2em 0 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    width: 90px;
+	background-position: center center;
+	background-color: transparent;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	border: 1px solid #999999;
+	font-weight: normal;
+	color: #212121;
+	background-image: url("images/TAB_blueSmall.png") !important;
+	background-repeat:no-repeat;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active
+{
+	background-image: url("images/TAB_blueBig.png") !important;
+	background-repeat:no-repeat;
+}
+
+.ui-state-active a
+{
+
+}
+
+.ui-tabs .ui-tabs-nav li a {
+    display: block;
+    float: right !important;
+    height: 38px;
+    line-height: 13px;
+    padding: 16px 8px 0 0 !important;
+    text-decoration: none;
+    width: 73px;
+	text-align:center;
+}
+
+.ui-widget-header {
+    -moz-border-bottom-colors: none !important;
+    -moz-border-left-colors: none !important;
+    -moz-border-right-colors: none !important;
+    -moz-border-top-colors: none !important;
+    background: none repeat scroll 0 0 transparent !important;
+    border-color: -moz-use-text-color -moz-use-text-color #AAAAAA !important;
+    border-image: none !important;
+    border-style: none none solid !important;
+    border-width: medium medium 1px !important;
+    color: #222222;
+    font-weight: bold;
+}
+
+.ui-tabs .ui-tabs-panel {
+    /*height: 468px !important;*/
+}
+
+.ui-tabs .ui-tabs-nav {
+    border: 1px solid;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 954px;
+	border: medium none !important;
+	z-index: 10;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: medium none !important;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    background-color:transparent !important;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active
+{
+	height:78px;
+	width:94px;
+	margin-top:0px;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a
+{
+	color:#FFFFFF;
+	font-size:23px;
+	padding:4px 7px 0 0 !important;
+	line-height:20px;
+	text-align:center;
+}
+/*//////////////////////////////END OF TABS*/
+
+/*//////////////////////////////////////////////////DATE PICKER CSS*/
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+    direction: rtl;
+}
+
+.ui-icon-circle-triangle-w {
+    background-image: url("images/eNextMonth.png") !important;
+}
+/*//////////////////////////////////////////////////END OF DATE PICKER CSS*/
+* {
+    font-size: 14px;
+	outline: medium none;
+}
+
+.cleared
+{
+	clear:both;
+	margin:0px;
+	padding:0px;
+}
+
+.Cover
+{
+	/*border-top: 1px solid #9B9B9B;*/
+    /*margin-top: 20px;*/
+    width: 100%;
+	padding-top: 10px;
+	display:none;
+}
+
+.CoverTitle
+{
+	border-bottom: 1px solid #9B9B9B;
+}
+
+h4
+{
+	cursor: pointer;
+    display: inline-table;
+    height: 25px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.Right
+{
+	float: right;
+    width: 290px;
+}
+
+.Center
+{
+	float: right;
+    width: 290px;
+}
+
+.Left
+{
+	float: left;
+    width: 290px;
+}
+
+select {
+    height: 26px;
+    width: 211px;
+	background-color: #FCFCFC;
+    border: 1px solid #E7E7E7;
+    color: #676769;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+}
+
+.InputTextClass{
+    height: 22px;
+    width: 203px;
+	background-color: #FCFCFC;
+    border: 1px solid #E7E7E7;
+    color: #676769;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+	padding: 0px;
+}
+
+span {
+    display: block;
+}
+
+.RadioBox {
+    float: right;
+    margin-left: 30px;
+}
+
+.RadioBox > span {
+    display: inline;
+}
+
+.textarea {
+	background-color: #FCFCFC;
+    border: 1px solid #E7E7E7;
+    color: #676769;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    height: 72px;
+    overflow: auto;
+    padding: 5px;
+    width: 203px;
+	resize: none;
+}
+
+.MoveToTabsButtons
+{
+	height: 40px;
+	margin-top: 20px;
+}
+
+.NextBtn {
+    float: left;
+}
+
+.PrevBtn
+{
+	float: right;
+}
+
+h4 img {
+    margin-left: 12px;
+}
+
+.ChkImg {
+    float: right;
+    margin-left: 10px;
+}
+
+.checkbox {
+    margin-top: 4px;
+}
+
+.checkbox > span {
+    display: inline;
+    float: right;
+}
+
+.RadioBoxBlock {
+    margin-top: 4px;
+}
+
+.RadioBoxBlock img {
+    float: right;
+    margin-left: 10px;
+}
+
+.eDate
+{
+	background-image: url("../images/eDateImg.png");
+    background-repeat: no-repeat;
+	background-position: 4px center;
+}
+
+.MokedList
+{
+	display:none;
+}
+
+.moked
+{
+	border: 1px solid;
+    width: 100%;
+	border-collapse: collapse;
+}
+
+.moked tr
+{
+
+}
+
+.moked th
+{
+	border: 1px solid;
+    width: 40px;
+	height: 20px;
+}
+
+.moked td
+{
+	border: 1px solid red;
+    width: 40px;
+	height: 20px;
+}
+/*////////////////////////////////////////////CAR PARTS CSS*/
+.WorkDetailsTitles div {
+    float: right;
+}
+
+.WorkTitleName {
+    margin-left: 154px;
+}
+
+.WorkTitleNameOther {
+    margin-left: 138px;
+}
+
+.WorkTitlePricePerHour {
+    margin-left: 15px;
+}
+
+.WorkTitlePrice {
+    margin-left: 40px;
+}
+
+.WorkTitleDiscount {
+    margin-left: 38px;
+}
+
+.WorkTitleDiscountPerc {
+    margin-left: 8px;
+}
+
+.WorkDetails {
+    margin-bottom: 20px;
+}
+
+.WorkInputHours {
+    width: 50px;
+}
+
+.WorkInputPricePerHour {
+    width: 50px;
+}
+
+.WorkInputPrice {
+    width: 50px;
+}
+
+.WorkInputDiscount {
+    width: 50px;
+}
+
+.WorkInputDiscountPerc {
+    width: 50px;
+}
+
+.addPartTitle div {
+    float: right;
+}
+
+.addPartTitleName {
+    margin-left: 168px;
+}
+
+.addPartTitleSerial {
+    margin-left: 66px;
+}
+
+.addPartTitleCondition {
+    margin-left: 75px;
+}
+
+.addPartTitleDiscount {
+    margin-left: 38px;
+}
+
+.addPartTitleDiscountPerc {
+    margin-left: 8px;
+}
+
+.addPartTitleDiscountWear {
+    margin-left: 14px;
+}
+
+.addPartTitlePrice {
+    margin-left: 62px;
+}
+
+.addPartInputSerial {
+    width: 80px;
+}
+
+.addPart .ddTitle{
+	width: 84px !important;
+}
+
+.addPart .dd {
+    width: 94px !important;
+}
+
+.addPartInputDiscount {
+    width: 50px;
+}
+
+.addPartInputDiscountPerc {
+    width: 50px;
+}
+
+.addPartInputDiscountWear {
+    width: 50px;
+}
+
+.addPartInputPrice {
+    width: 80px;
+}
+/*////////////////////////////////////////////CAR PARTS CSS*/
+.test12
+{
+
+}
+   
+.mCustomInput {
+    background-color: blue;
+    border: 1px solid;
+    color: #FFFFFF;
+    height: 24px;
+    width: 100px;
+}
+  
+.ReportsTmp {
+    cursor: pointer;
+}
+
+
+.borderClass
+{
+	border:1px solid #E7E7E7;
+	height: 32px;
+}
+  
+.inlineClass
+{
+	display:inline;
+	float:right;
+	margin-left: 20px;
+}
+
+.inlineClassCoverTitle
+{
+	display:inline;
+	margin-left: 20px;
+}
+
+.BlockClass
+{
+	display:block;
+}
+
+.ImgCalc
+{
+	cursor:pointer;
+}
+
+.CarTested {
+    float: right;
+}
+.RemoveGarage {
+    margin-top: 19px;
+}
+
+.AddGarage {
+    margin-top: 19px;
+}
+
+.GarageClone {
+    border-bottom: 1px solid #C9C7C7;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+/*//////////////////////////////////Impairment CSS*/
+.ImpairmentPercent
+{
+	width: 30px;
+}
+
+.ImpairmentAdd
+{
+
+}
+
+.ImpairmentAdd div
+{
+	margin-left: 22px;
+}
+
+.ImpairmentSum
+{
+	display: block;
+    height: 32px;
+    width: 152px;
+}
+
+.ImpairmentTitle
+{
+	margin-right: 78px;
+}
+
+.ImpairmentPercTitle
+{
+	margin-right: 200px;
+}
+
+.ImpairmentDescTitle
+{
+	margin-right: 6px;
+}
+
+.ImpairmentText
+{
+	height: 32px;
+    width: 244px;
+	margin-left: 20px;
+}
+
+.ImpairmentTextPercent
+{
+	width: 34px;
+	margin-left: 20px;
+}
+
+.ImpairmentTextDesc
+{
+	height: 32px;
+    width: 250px;
+}
+/*//////////////////////////////////Impairment CSS*/
+  
+/*//////////////////////////////CAR PHOTOS TAB*/
+.carPhotoCover
+{
+	display: block;
+    height: 202px;
+    width: 230px;
+}
+
+.photoRemove
+{
+
+}
+
+.carPhoto
+{
+    height: 174px;
+    width: 228px;
+}
+/*//////////////////////////////END OF CAR PHOTOS TAB*/
+
+/*/////////////////////////////////WHEN CHOOSING OTHER DETAILS FOR FIRST DETAILS TAB*/
+.detailsOther
+{
+  display:none;
+}
+/*/////////////////////////////////END OF WHEN CHOOSING OTHER DETAILS FOR FIRST DETAILS TAB*/
+
+.Clone
+{
+	border:1px solid red;
+	height:180px;
+	margin-bottom: 14px;
+}
+
+.RemoveAddReduce
+{
+	
+}
+   
+.AddReduceClone {
+    height: 48px;
+}
+
+.AddReduceCloneWeight {
+    height: 48px;
+}
+
+.AddRed {
+    margin-top: 12px;
+	height: 22px;
+}
+
+.eAddReduce
+{
+	margin-left: 8px;
+}
+
+.ePercentChange
+{
+	margin-left: 148px;
+}
+
+.eMoneyChange
+{
+	margin-left: 156px;
+}
+
+.eRemove
+{
+	margin-left: 2px;
+}
+
+.eAdd
+{
+
+}
+/*////////////////////////////////////////////////////////////////////////////////////IFRAME ADD PARTS CSS*/
+
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable {
+    width: 750px !important;
+}
+.AddPartsIframe iframe
+{
+	/*display:none;*/
+	overflow:hidden;
+}
+
+.AddPartsIframe {
+    border: 1px solid;
+    float: left;
+    height: 292px;
+    width: 608px;
+}
+
+.ToPartsSelect
+{
+
+}
+
+.addPart {
+    float: right;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////END OF IFRAME ADD PARTS CSS*/
+
+/*///////////////////////////////////////////////////////////////////////////TEMPLATES OF REPORTS CSS*/
+.TemplatesCover
+{
+	display:none;
+}
+/*///////////////////////////////////////////////////////////////////////////END OF TEMPLATES OF REPORTS CSS*/
+
+body {
+    margin: 0;
+    padding: 0;
+	direction:rtl;
+	background-color:#f2f2f2;
+	font-family:arial;
+}
+
+p
+{
+	margin:0px;
+	padding:0px;
+	font-family:arial;
+}
+
+div
+{
+	font-family:arial;
+}
+
+.cleared
+{
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+.HeaderCover
+{
+	background-image: url("../images/HeaderCoverBg.png");
+    background-repeat: repeat-x;
+    height: 200px;
+}
+
+.Header
+{
+	background-image: url("../images/HeaderBg.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    margin: 0 auto;
+    width: 960px;
+	position:relative;
+}
+
+.HeaderTop
+{
+    height: 20px;
+}
+
+.TopMenu
+{
+	float: left;
+}
+
+.TopMenu ul
+{
+	margin: 0;
+    padding: 0;
+}
+
+.TopMenu ul li
+{
+	float: right;
+    list-style: none outside none;
+	color: #FFFFFF;
+}
+
+.TopMenu ul li a
+{
+	color: #FFFFFF;
+    text-decoration: none;
+	padding: 0 10px;
+}
+
+.HeaderLogo
+{
+	background-image: url("../images/HeaderLogo.png");
+    background-repeat: no-repeat;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 317px;
+}
+   
+.SummeryText
+{
+	color: #FFFFFF;
+    position: absolute;
+    right: 0;
+    top: 120px;
+}
+
+.MainMenu
+{
+	height: 46px;
+    position: absolute;
+    top: 152px;
+    width: 618px;
+}
+
+.MenuRightBg
+{
+	background-image: url("../images/MenuBgRight.png");
+    background-repeat: no-repeat;
+    float: right;
+    height: 50px;
+	background-position: right top;
+}
+
+.MenuLeftBg
+{
+	background-image: url("../images/MenuBgLeft.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 50px;
+}	
+
+.MenuMiddleBg
+{
+	background-image: url("../images/MenuBgMiddle.png");
+    background-repeat: repeat-x;
+    margin: 0 10px;
+}
+
+.MainMenu a
+{
+	color: #FFFFFF;
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.HeaderLoginBox
+{
+	background-image: url("../images/HeaderLoginBoxBg.png");
+    background-repeat: no-repeat;
+    height: 114px;
+    left: 0;
+    position: absolute;
+    top: 47px;
+    width: 239px;
+}
+
+.LoginBoxTitle
+{
+    color: #000000;
+    float: left;
+    font-size: 20px;
+    height: 29px;
+    text-align: center;
+    width: 234px;
+}
+
+.LoginBoxDesc
+{
+    color: #FFFFFF;
+    float: left;
+    height: 50px;
+    width: 228px;
+}
+
+.LoginBoxReg
+{
+    float: left;
+    width: 228px;
+}
+
+.LoginConnect
+{
+	color: #FFA200;
+    float: right;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.LoginRegister
+{
+	color: #FFA200;
+    float: left;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.Main
+{
+	background-color: #FFFFFF;
+    margin: 38px auto 0;
+    /*height: 800px;*/
+    width: 960px;
+	position:relative;
+}
+
+.HpMainTop {
+    background-image: url("../images/HpMainTopBg.png");
+    background-position: right 438px;
+    background-repeat: no-repeat;
+    height: 460px;
+    width: 100%;
+}
+
+.MainBannerRight
+{
+    height: 710px;
+    margin-right: -114px;
+    position: absolute;
+    top: 0;
+    width: 95px;
+}
+
+.MainBannerLeft
+{	
+    height: 710px;
+    margin-right: 976px;
+    position: absolute;
+    top: 0;
+    width: 95px;
+}
+
+.fixedMenu {
+    position: fixed;
+    top: 10px;
+}
+/*/////////////////////////////////////////////////////HOME PAGE SPARE PART SEARCH CSS*/
+.SparePartsSearch
+{
+	background-image: url("../images/SparePartsBg.png");
+    background-repeat: no-repeat;
+    float: right;
+    height: 428px;
+    padding: 16px 32px;
+    width: 186px;
+}
+
+.SparePartsSearchTitle
+{
+	background-image: url("../images/HpMainTopTitleBg.png");
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-size: 22px;
+    height: 35px;
+    padding-top: 2px;
+    text-align: center;
+    width: 170px;
+}
+
+.HpSparePart
+{
+    float: right;
+    margin-bottom: 12px;
+    margin-left: 13px;
+    margin-top: 6px;
+    width: 216px;
+}
+
+.HpSparePart span
+{
+    display: inline-block;
+}
+
+.HpSparePart img
+{
+	margin-bottom: 4px;
+    margin-left: 6px;
+}
+
+.HpSparePart input
+{
+    border: 1px solid #ABADB3;
+    width: 166px;
+	margin:0px;
+}
+
+.HpSparePart textarea
+{
+    background-color: #E2E2E4;
+    border: 1px solid #C3C3C3;
+    height: 21px;
+    padding-top: 6px;
+    resize: none;
+    width: 205px;
+	padding-right: 10px;
+}
+
+.HpSparePartsBtn
+{
+	float: left;
+    margin-left: 10px;
+    width: 68px;
+}
+/*/////////////////////////////////////////////////////END OF HOME PAGE SPARE PART SEARCH CSS*/
+
+/*/////////////////////////////////////////////////////HOME PAGE ENTER STOER CSS*/
+.EnterStore
+{
+    float: right;
+    height: 160px;
+    margin: 12px 44px 0 0;
+    width: 170px;
+}
+
+.EnterStoreTitle
+{
+	background-image: url("../images/HpMainTopTitleBg.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-size: 22px;
+    height: 34px;
+    padding-left: 5px;
+    padding-top: 2px;
+    text-align: center;
+}
+
+.EnterStoreDesc
+{
+	color: #102131;
+    font-size: 22px;
+    padding-left: 8px;
+    text-align: center;
+}
+
+.EnterStore input
+{
+	background-color: transparent;
+    border: 1px solid #ABADB3;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 142px;
+}
+
+.EnterStoreText
+{
+    margin-right: 10px;
+	color: #D9000C;
+    font-size: 11px;
+	font-weight: bold;
+}
+
+.EnterStoreText a
+{
+	color: #D9000C;
+    font-size: 11px;
+	font-weight: bold;
+}
+
+.EnterStoreBtn
+{
+	margin-right: -1px;
+}
+/*/////////////////////////////////////////////////////END OF HOME PAGE ENTER STOER CSS*/
+.HpMainTopBanners
+{
+    float: right;
+    height: 436px;
+    margin-right: 66px;
+    width: 428px;
+}
+
+.HpMainBanner
+{
+	margin-bottom: 20px;
+}
+/*///////////////////////////////////////////////HOME PAGE BOTTOM ARTICLES*/
+.HpBottomArticles
+{
+    height: 168px;
+	margin-right: 10px;
+}
+
+.HpArticle
+{
+	background-image: url("../images/HpArticleBg.png");
+    background-repeat: no-repeat;
+    float: right;
+    height: 168px;
+    margin-left: 6px;
+    width: 230px;
+}
+
+.HpArticleForm
+{
+	background-image: url("../images/HpArticleBg.png");
+    background-repeat: no-repeat;
+    float: right;
+    height: 168px;
+    margin-right: 2px;
+    width: 230px;
+	margin-left: 0;
+}
+
+.HpArticleTitle {
+    height: 24px;
+    padding: 10px;
+}
+
+.HpArticleTitle h2 {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.HpArticleDesc {
+    font-size: 14px;
+    padding: 6px 12px 4px;
+}
+
+.HpArticleReadMore {
+    padding: 2px 12px 0 0;
+}
+
+.HpArticleForm .HpArticleDesc {
+    padding: 0;
+}
+
+.HpFormInput {
+    height: 22px;
+    margin-right: 18px;
+    margin-top: 6px;
+    width: 185px;
+}
+
+.HpFormInput input {
+    background-color: transparent;
+    border: 1px solid #E7E8EA;
+    float: left;
+    height: 11px;
+    margin-top: -18px;
+    width: 132px;
+}
+
+
+.HpFormSnd {
+    height: 30px;
+    margin-right: 134px;
+    margin-top: 7px;
+    width: 70px;
+}
+/*///////////////////////////////////////////////END OF HOME PAGE BOTTOM ARTICLES*/
+
+/*////////////////////////////////////////////////FOOTER CSS*/
+.FooterCover
+{
+	background-color: #102131;
+    height: 64px;
+	margin-top: 20px;
+}
+
+.Footer
+{
+	color: #FFFFFF;
+    height: 42px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+    width: 960px;
+}
+/*////////////////////////////////////////////////END OF FOOTER CSS*/
+
+/*////////////////////////////////////////////////PART DAMAGE ADD REDUCE TAB 6 CSS*/
+.eAddReducePartDmg
+{
+	margin-left: 104px;
+}
+
+.ePercentChangePartDmg
+{
+	margin-left: 10px;
+}
+
+.eMoneyChangePartDmg
+{
+	margin-left: 186px;
+}
+
+.eAddRemovePartDmg
+{
+
+}
+
+.PartDmgPercent
+{
+	width: 66px;
+}
+/*////////////////////////////////////////////////END OF PART DAMAGE ADD REDUCE TAB 6 CSS*/
+
+/*///////////////////////////////////////////////REPORTS TAB 4 CSS*/
+.ReportRight
+{
+	float:right;
+	border:1px solid red;
+	width: 450px;
+}
+
+.ReportLeft
+{
+	float:left;
+	border:1px solid green;
+	width: 450px;
+}
+/*///////////////////////////////////////////////END OF REPORTS TAB 4 CSS*/

@@ -5,46 +5,83 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
 
-	<!-- blueprint CSS framework -->
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
-	<!--[if lt IE 8]>
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
-	<![endif]-->
-
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/script.js"></script>
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/eTabsScript.js"></script>
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-ui.js"></script>
+	
+	<link rel="Stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css" />
+	<link rel="Stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/Supplier.css" />
+	
+	<link rel="Stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/SparePartsPriceList.css" />
+	
+	<!-- <msdropdown> -->
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/dropdownCss/dd.css" />
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/dropdownJs/jquery.dd.min.js"></script>
+	<!-- </msdropdown> -->
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
 <body>
-
-<div class="container" id="page">
-
-	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-	</div><!-- header -->
-
-	<div id="mainmenu">
-		<?php 
-		$links = array();
-		
-		$links[] = array('label'=>'Home', 'url'=>array('/site/index'));
-		if(Yii::app()->user->id==1){
-			$links[] = array('label'=>'Pages', 'url'=>array('/admin/pages', 'view'=>'about'));
-			$links[] = array('label'=>'Users', 'url'=>array('/admin/users'));
-			$links[] = array('label'=>'Suppliers', 'url'=>array('/admin/suppliers'));
-			$links[] = array('label'=>'Appraisers', 'url'=>array('/admin/appraisers'));
-			$links[] = array('label'=>'Spares', 'url'=>array('/admin/spares'));
-		}
-		$links[] = array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest);
-		$links[] = array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest);
-		
-		$this->widget('zii.widgets.CMenu',array(
-			'items'=> $links,
-		)); ?>
-	</div><!-- mainmenu -->
+		<!-----------------------------------------HEADER-->
+		<div class="HeaderCover">
+			<div class="Header">
+				<div class="HeaderTop">
+					<div class="TopMenu">
+						<ul>
+							<li><a href="http://eliamran.webxp.org.il/Portals/0/ContactHandler/About.html">אודות</a></li>
+							<li class="Sep">|</li>
+							<li><a href="http://eliamran.webxp.org.il/Portals/0/ContactHandler/Regulations.html">תקנון</a></li>
+							<li class="Sep">|</li>
+							<li><a href="http://eliamran.webxp.org.il/Portals/0/ContactHandler/ContactUs.html">צור קשר</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="HeaderLogo"></div>
+				<div class="SummeryText">זירת מסחר, מחירוני חלפים, מחירון תוספות 4*4 שיפורי רכב, רכב אספנות, שמאות רכב</div>
+				<div class="MainMenu">
+						<div class="MenuRightBg">
+							<div class="MenuLeftBg">
+								<div class="MenuMiddleBg">
+									<a href="http://eliamran.webxp.org.il/Portals/0/ContactHandler/HomePage.html">זירת מסחר</a>
+								</div>
+							</div>
+						</div>
+						<div class="MenuRightBg">
+							<div class="MenuLeftBg">
+								<div class="MenuMiddleBg">
+									<a href="<?php echo Yii::app()->request->baseUrl; ?>/site/login">כניסת שמאים</a>
+								</div>
+							</div>
+						</div>
+						<div class="MenuRightBg">
+							<div class="MenuLeftBg">
+								<div class="MenuMiddleBg">
+									<a href="#">מחירון חלפים</a>
+								</div>
+							</div>
+						</div>
+						<div class="MenuRightBg">
+							<div class="MenuLeftBg">
+								<div class="MenuMiddleBg">
+									<a href="http://eliamran.webxp.org.il/Portals/0/ContactHandler/SupplierLogin.html">כניסת ספקים</a>
+								</div>
+							</div>
+						</div>
+						<div class="MenuRightBg">
+							<div class="MenuLeftBg">
+								<div class="MenuMiddleBg">
+									<a href="http://eliamran.webxp.org.il/Portals/0/ContactHandler/SuppliersList.html">רשימת ספקים</a>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+		<!-----------------------------------------END OF HEADER-->
+		<!-----------------------------------------MAIN-->
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
@@ -55,13 +92,15 @@
 
 	<div class="clear"></div>
 
-	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by Car Market.<br/>
-		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
-	</div><!-- footer -->
-
-</div><!-- page -->
-
-</body>
+	<!-----------------------------------------END OF MAIN-->
+		
+		<!-----------------------------------------FOOTER-->
+		<div class="FooterCover">
+			<div class="Footer">
+				© כל הזכויות שמורות לאלי אמרן - שמאי רכב | 054-69992233 | eli@hamovil.net | עיצוב ובניית האתר: Allbiz
+			</div>
+		</div>
+		<!-----------------------------------------END OF FOOTER-->
+		
+	</body>
 </html>

@@ -24,17 +24,35 @@ $this->breadcrumbs=array(
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'username'); ?>
-		<?php echo $form->textField($model,'username'); ?>
-		<?php echo $form->error($model,'username'); ?>
-	</div>
 	
 	<div class="row">
 		<?php echo $form->labelEx($model,'name'); ?>
 		<?php echo $form->textField($model,'name'); ?>
 		<?php echo $form->error($model,'name'); ?>
+	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'lname'); ?>
+		<?php echo $form->textField($model,'lname'); ?>
+		<?php echo $form->error($model,'lname'); ?>
+	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'company'); ?>
+		<?php echo $form->textField($model,'company'); ?>
+		<?php echo $form->error($model,'company'); ?>
+	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'phone'); ?>
+		<?php echo $form->textField($model,'phone'); ?>
+		<?php echo $form->error($model,'phone'); ?>
+	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'cellphone'); ?>
+		<?php echo $form->textField($model,'cellphone'); ?>
+		<?php echo $form->error($model,'cellphone'); ?>
 	</div>
 	
 	<div class="row">

@@ -1,0 +1,438 @@
+.Main
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.SparePriceTop
+{
+	margin-bottom: 10px;
+    margin-right: 10px;
+	width: 940px;
+}
+
+.SparePriceTopTitle
+{
+	font-size: 20px;
+}
+
+.SparePriceTopDesc
+{
+
+}
+
+.SparePriceCenter
+{
+	padding-bottom: 20px;
+}
+
+.SparePartsSearch {
+    background-color: #F2F2F2;
+    background-image: none;
+    border: 1px solid #ACADB2;
+    height: 210px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 8px 10px;
+    width: 918px;
+}
+
+.SparePartLeft
+{
+    margin-left: 18px;
+    width: 696px;
+}
+
+.SparePartBanner
+{
+	height: 68px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+    width: 937px;
+}
+
+.PartsSearchResult
+{
+	background-color: #FEFEFE;
+    border: 1px solid #D7D7D7;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 938px;
+}
+
+.PartsSearchHeader
+{
+	border-bottom: 1px solid #DFDFDF;
+    height: 58px;
+}
+
+.PartName
+{
+	border-left: 1px solid #EBEBEB;
+    color: #303E4C;
+    display: inline-block;
+    font-size: 18px;
+    height: 40px;
+    margin-top: 2px;
+    padding-top: 12px;
+    text-align: center;
+    width: 132px;
+}
+
+.PartPrice
+{
+	border-left: 1px solid #EBEBEB;
+    color: #303E4C;
+    display: inline-block;
+    font-size: 18px;
+    height: 40px;
+    margin-top: 2px;
+    padding-top: 12px;
+    /*text-align: center;*/
+    width: 97px;
+}
+
+.Partdate
+{
+	border-left: 1px solid #EBEBEB;
+    color: #303E4C;
+    display: inline-block;
+    font-size: 18px;
+    height: 40px;
+    margin-top: 2px;
+    padding-top: 12px;
+    /*text-align: center;*/
+    width: 100px;
+}
+
+.SupllierName
+{
+	border-left: 1px solid #EBEBEB;
+    color: #303E4C;
+    display: inline-block;
+    font-size: 18px;
+    height: 40px;
+    margin-top: 2px;
+    padding-top: 12px;
+    text-align: center;
+    width: 464px;
+}
+
+.LinkToSupllier
+{
+	display: inline-block;
+    height: 46px;
+    margin-bottom: -20px;
+    width: 80px;
+}
+
+.PartsSearchHeader  img {
+    margin-bottom: 2px;
+    margin-left: 4px;
+}
+
+.PartsSearchItem
+{
+	border-bottom: 1px solid #DFDFDF;
+    height: 84px;
+}
+
+.PartNameItem
+{	
+	border-left: 1px solid #EBEBEB;
+    color: #303E4C;
+    float: right;
+    font-size: 18px;
+    height: 68px;
+    margin-top: 2px;
+    padding-top: 12px;
+    text-align: center;
+    width: 132px;
+}
+
+.PartNameItem span
+{
+
+}
+
+.PartPriceItem
+{
+	border-left: 1px solid #EBEBEB;
+    color: #303E4C;
+    float: right;
+    font-size: 18px;
+    height: 68px;
+    margin-top: 2px;
+    padding-top: 12px;
+    text-align: center;
+    width: 101px;
+}
+
+.PartdateItem
+{
+	border-left: 1px solid #EBEBEB;
+    color: #303E4C;
+    float: right;
+    font-size: 18px;
+    height: 68px;
+    margin-top: 2px;
+    padding-top: 12px;
+    text-align: center;
+    width: 104px;
+}
+
+.SupllierNameItem
+{
+	border-left: 1px solid #EBEBEB;
+    color: #303E4C;
+    float: right;
+    font-size: 18px;
+    height: 68px;
+    margin-top: 2px;
+    padding-top: 12px;
+    text-align: center;
+    width: 468px;
+}
+
+.LinkToSupllierItem
+{
+    color: #6B8C30;
+    float: right;
+    font-size: 16px;
+    height: 68px;
+    margin-top: 2px;
+    padding-top: 12px;
+    text-align: center;
+    width: 85px;
+}
+
+/*//////////////////////////////////////////////////SUPPLIERS LIST*/
+.SupplierHeader
+{
+	border-bottom: 1px solid #DFDFDF;
+    height: 58px;
+}
+
+.SupplierNameTitle
+{
+	border-left: 1px solid #EBEBEB;
+    color: #303E4C;
+    display: inline-block;
+    font-size: 18px;
+    height: 40px;
+    margin-top: 2px;
+    padding-top: 12px;
+    text-align: center;
+    width: 132px;
+}
+
+.SupplierAddress
+{
+	border-left: 1px solid #EBEBEB;
+    color: #303E4C;
+    display: inline-block;
+    font-size: 18px;
+    height: 40px;
+    margin-top: 2px;
+    padding-top: 12px;
+    width: 218px;
+}
+
+.SupplierPhone
+{
+	border-left: 1px solid #EBEBEB;
+    color: #303E4C;
+    display: inline-block;
+    font-size: 18px;
+    height: 40px;
+    margin-top: 2px;
+    padding-top: 12px;
+    width: 100px;
+}
+
+.SupllierWebSite
+{
+	border-left: 1px solid #EBEBEB;
+    color: #303E4C;
+    display: inline-block;
+    font-size: 18px;
+    height: 40px;
+    margin-top: 2px;
+    padding-top: 12px;
+    text-align: center;
+    width: 294px;
+}
+
+.SupllierLink
+{
+	display: inline;
+    font-size: 18px;
+    height: 46px;
+    text-align: center;
+}
+
+.SupplierItem
+{
+	border-bottom: 1px solid #DFDFDF;
+    height: 84px;
+}
+
+.SupplierNameItem
+{
+	border-left: 1px solid #EBEBEB;
+    color: #303E4C;
+    float: right;
+    font-size: 18px;
+    height: 68px;
+    margin-top: 2px;
+    padding-top: 12px;
+    text-align: center;
+    width: 132px;
+}
+
+.SupplierAddressItem
+{
+	border-left: 1px solid #EBEBEB;
+    color: #303E4C;
+    float: right;
+    font-size: 18px;
+    height: 68px;
+    margin-top: 2px;
+    padding-top: 12px;
+    text-align: center;
+    width: 222px;
+}
+
+.SupplierPhoneItem
+{
+	border-left: 1px solid #EBEBEB;
+    color: #303E4C;
+    float: right;
+    font-size: 18px;
+    height: 68px;
+    margin-top: 2px;
+    padding-top: 12px;
+    text-align: center;
+    width: 104px;
+}
+
+.SupllierWebSiteItem
+{
+	border-left: 1px solid #EBEBEB;
+    color: #303E4C;
+    float: right;
+    font-size: 18px;
+    height: 68px;
+    margin-top: 2px;
+    padding-top: 12px;
+    text-align: center;
+    width: 298px;
+}
+
+.SupllierLinkItem
+{
+	color: #6B8C30;
+    float: right;
+    font-size: 16px;
+    height: 68px;
+    margin-top: 2px;
+    padding-top: 12px;
+    text-align: center;
+    width: 176px;
+}
+/*//////////////////////////////////////////////////END OF SUPPLIERS LIST*/
+
+/*//////////////////////////////////////////////////////SUPPLIER ADD CARE PAGE*/
+.FloatInlineCss
+{
+	float: right;
+    margin-bottom: 12px;
+    margin-left: 13px;
+    margin-top: 6px;
+    width: 216px;
+}
+
+.SupplierAddCar
+{
+	padding:0px 10px 20px 10px;
+}
+
+.AddCarHeader
+{
+
+}
+
+.AddCarPartTitles > div {
+    float: right;
+}
+
+.CarModelTitle {
+    margin-left: 180px;
+}
+
+.CarSubModelTitle {
+    margin-left: 156px;
+}
+
+.CarConditionTitle {
+    margin-left: 170px;
+}
+
+.CarPartDateTitle {
+    margin-left: 96px;
+}
+
+.AddCarPartBtn {
+    margin-top: 12px;
+}
+
+.RemoveCarPartBtn {
+    margin-top: 12px;
+}
+
+.AddPartName
+{
+	border-left: 1px solid #EBEBEB;
+    color: #303E4C;
+    display: inline-block;
+    font-size: 18px;
+    height: 54px;
+    margin-bottom: 16px;
+    min-width: 132px;
+}
+
+.AddPartprice {
+    display: block;
+    height: 16px;
+    width: 104px;
+}
+
+
+.AddPartName > span {
+    display: inline;
+    font-size: 16px;
+    margin-right: -30px;
+    margin-top: -8px !important;
+}
+
+.AddDarPartsBtn
+{
+	background-image: url("../images/SupRegSndBg.png");
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 22px;
+    height: 38px;
+    margin-right: 707px;
+    margin-top: 16px;
+    padding-top: 6px;
+    text-align: center;
+    width: 233px;
+}
+/*//////////////////////////////////////////////////////END OF SUPPLIER ADD CARE PAGE*/
+
+.dd {
+    width: 214px !important;
+}

@@ -1,0 +1,784 @@
+﻿body,p,div,span
+{
+	font-family:arial;
+}
+
+.Main
+{
+	padding-top: 20px;
+	min-height: 714px;
+}
+
+span
+{
+	display:inline;
+}
+
+.Supplier
+{
+
+}
+
+.SupplierTitle
+{
+	font-size: 30px;
+    margin-bottom: 20px;
+    padding-right: 22px;
+}
+
+.SupplierLeft
+{
+    margin-right: 10px;
+    width: 936px;
+}
+
+.Garage
+{
+    background-color: #C8D9F0;
+    height: 96px;
+    margin: 0 auto;
+    padding: 10px 18px;
+    width: 906px;
+}
+
+.GarageRight
+{
+	float: right;
+    width: 472px;
+}
+
+.GarageName
+{
+    float: right;
+    width: 470px;
+	color: #102131;
+}
+
+.GarageName h2
+{
+	margin: 0;
+	color: #102131;
+}
+
+.GarageDetails
+{
+    float: right;
+    height: 62px;
+    width: 470px;
+	color: #102131;
+}
+
+.GarageDetails>div
+{
+    float: right;
+    font-size: 20px;
+    margin-left: 23px;
+    margin-top: 30px;
+}
+
+.GarageStreet
+{
+
+}
+
+.GaragePhone
+{
+
+}
+
+.GarageCelPhone
+{
+	margin-left: 0 !important;
+    margin-right: 26px;
+}
+
+.GarageImg
+{
+    float: left;
+    height: 96px;
+    width: 176px;
+}
+
+.GarageTable
+{
+	margin: 10px auto 0;
+    min-height: 200px;
+    text-align: center;
+    width: 928px;
+}
+
+.SupBottomBanner {
+    margin-bottom: 32px;
+}
+
+/*////////////////////////////////////SUPLLIER TABS CSS*/
+.SupplierName
+{
+	background-color: #E2E2E4;
+    border: 1px solid #C3C3C3;
+    float: right;
+    height: 24px;
+    margin-bottom: 0;
+    margin-left: 13px;
+    margin-top: 0;
+    padding-right: 10px;
+    padding-top: 4px;
+    width: 204px;
+}
+
+.SupContNoactive
+{
+	float:right;
+	background-image:url("../images/SupTabBg.png");
+	background-repeat:no-repeat;
+}
+
+.SupContNoactive:hover
+{
+	float:right;
+	background-image:url("../images/SupTabCurrentBg.png");
+	background-repeat:no-repeat;
+}
+
+.SupContNoactive a:hover
+{
+	color: #234A6F;
+}
+
+.SupContactive 
+{
+	float:right;
+	background-image:url("../images/SupTabCurrentBg.png");
+	background-repeat:no-repeat;
+}
+
+.SupContactive > a {
+    color: #234A6F;
+    display: block;
+    font-size: 20px;
+    height: 34px;
+    padding-top: 9px;
+    text-align: center;
+    text-decoration: none;
+    width: 232px;
+}
+
+.SupContNoactive > a {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    height: 34px;
+    padding-top: 9px;
+    text-align: center;
+    text-decoration: none;
+    width: 232px;
+}
+
+.SupContainer {
+    padding-top: 50px;
+}
+
+.SupInnerCont {
+    background-color: #F4F4F4;
+    border: 1px solid #E3E3E3;
+	padding-bottom: 20px;
+	width: 926px;
+}
+
+.SupPartItem {
+    border-bottom: 1px solid #E3E3E3;
+    height: 100px;
+    margin: 0 auto;
+    padding: 4px;
+    width: 910px;
+}
+
+.SupCarClass
+{
+	background-color: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    height: 18px;
+    padding: 4px;
+}
+
+.SupCarInline
+{
+	display: inline;
+    float: right;
+	text-align: right;
+}
+
+.SupPartComments {
+    text-align: right;
+}
+
+.SupPartSelect {
+    margin-left: 10px;
+    width: 20px;
+}
+
+.SupCarKind {
+    margin-left: 10px;
+    width: 50px;
+}
+
+.SupCar {
+    margin-left: 10px;
+    width: 100px;
+}
+
+.SupCarModel {
+    margin-left: 10px;
+    width: 100px;
+}
+
+.SupCarSubModel {
+    margin-left: 10px;
+    width: 50px;
+}
+
+.SupCarYear {
+    margin-left: 10px;
+    width: 34px;
+}
+
+.SupCarEngine {
+    margin-left: 10px;
+    width: 46px;
+}
+
+.SupCarGear {
+    margin-left: 10px;
+    width: 50px;
+}
+
+.SupCarPart {
+    margin-left: 10px;
+    width: 70px;
+}
+
+.SupCarPrice {
+    margin-left: 10px;
+    width: 50px;
+}
+
+.SupCarDate {
+    margin-left: 10px;
+    width: 60px;
+}
+
+.SupCarCondition {
+    width: 60px;
+}
+
+.AddToReserveList {
+    background-color: #D9000C;
+    color: #FFFFFF;
+    float: left;
+    font-size: 20px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-top: 2px;
+    text-align: center;
+    width: 200px;
+}
+/*////////////////////////////////////END OF SUPLLIER TABS CSS*/
+
+/*/////////////////////////////////////////SUPPLIER CONTACT US*/
+.SupContactUs
+{
+	height: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 300px;
+}
+
+.SupContactUsTitle
+{
+	background-image: url("../images/SupResTitleBg1.png");
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-size: 24px;
+    height: 37px;
+    margin-bottom: 20px;
+    margin-right: 58px;
+    width: 198px;
+}
+
+.SupContactUs input {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 188px;
+}
+
+.SupContactBtn {
+    background-image: url("../images/SupResSendBtn.png");
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    display: block;
+    font-size: 20px;
+    height: 30px;
+    margin-right: 121px;
+    width: 68px;
+}
+
+.SupContactUs textarea {
+    background-color: #FCFCFC;
+    border: 1px solid #E7E7E7;
+    margin-bottom: 20px;
+    margin-right: 12px;
+    resize: none;
+    width: 198px;
+	height: 78px;
+}
+/*/////////////////////////////////////////END OF SUPPLIER CONTACT US*/
+.SupReservRight {
+    border-left: 1px solid #C9C7C7;
+    height: 374px;
+    margin-right: 18px;
+    margin-top: 36px;
+    width: 230px;
+	float: right;
+}
+
+.SupResTitle
+{
+	background-image: url("../images/SupResTitleBg.png");
+    background-repeat: no-repeat;
+    color: #FFFFFF !important;
+    font-size: 20px;
+    font-weight: bold;
+    height: 34px;
+    padding-left: 4px;
+    padding-top: 3px;
+    text-align: center;
+    width: 165px;
+	margin-right: 24px !important;
+	margin-bottom: 14px !important;
+}
+
+.SupReservRight > div {
+    color: #D9000C;
+    margin-bottom: 8px;
+    margin-right: -20px;
+}
+
+.SupReservRight input {
+    border: 1px solid #ABADB3;
+    height: 18px;
+    width: 154px;
+}
+
+.SupReservRight textarea
+{
+	border: 1px solid #ABADB3;
+    height: 70px;
+    margin-right: 4px;
+    resize: none;
+    width: 163px;
+}
+
+.SupResSendBtn {
+    background-image: url("../images/SupResSendBtn.png");
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    height: 29px;
+    margin-right: 90px;
+    margin-top: 12px;
+    padding-left: 2px;
+    padding-top: 4px;
+    text-align: center;
+    width: 66px;
+}
+
+.SendToAllSuppliers
+{
+    color: #676769 !important;
+    height: 20px;
+    margin-right: 20px !important;
+    width: 182px;
+}
+
+.SendToAllSuppliers .ChkImg
+{
+	margin-top: -41px;
+}
+
+.SupReservLeft
+{
+    float: right;
+    margin-top: 36px;
+    min-height: 100px;
+    width: 676px;
+}
+
+.SupResPartTitle
+{	
+	background-image: url("../images/SupResPartTitleBg.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    height: 34px;
+    margin-bottom: 16px;
+    margin-right: 20px;
+    padding-right: 10px;
+    padding-top: 2px;
+    width: 618px;
+}
+
+.SupPartRes
+{
+	border-bottom: 1px solid #E3E3E3;
+    height: 30px;
+    margin-right: 20px;
+    text-align: right;
+    width: 616px;
+}
+
+.SupPartRes .ChkImg {
+    margin-top: -16px;
+}
+
+.PartOrdered
+{
+	margin-right: 4px;
+}
+
+.SupCarChkOrdered
+{
+    display: inline-block;
+    height: 20px;
+    margin-top: 0;
+    width: 20px;
+}
+/*/////////////////////////////////SUPPLIER PAGE LOGIN AND REGISTER*/
+.eLoginAndRegTitle
+{
+	font-size: 22px;
+    padding-right: 20px;
+}
+
+.eLoginAndRegDesc {
+    float: right;
+    margin-bottom: 10px;
+    margin-top: 34px;
+    width: 374px;
+}
+
+.eLoginAndReg
+{
+	background-color: #F4F4F4;
+    border: 1px solid #D7D7D7;
+    height: 548px;
+    margin: 84px auto 0;
+    width: 914px;
+}
+
+.SupRegister {
+    background-image: url("../images/SupRegisterBg.png");
+    background-repeat: no-repeat;
+    height: 510px;
+    margin-right: 36px;
+    margin-top: 35px;
+    width: 416px;
+	padding-top: 36px;
+	float: right;
+}
+
+.SupRegister input
+{
+	background-color: transparent;
+    background-image: url("../images/SupLoginInputBg.png");
+    background-repeat: no-repeat;
+    border: medium none;
+    height: 28px;
+    margin-bottom: 8px;
+    margin-right: 65px;
+    padding-right: 10px;
+    width: 220px;
+}
+
+.SupRegSubmit
+{
+	background-image: url("../images/SupRegSndBg.png");
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-size: 22px;
+    height: 38px;
+    margin-right: 62px;
+    margin-top: 16px;
+    padding-top: 6px;
+    text-align: center;
+    width: 233px;
+	cursor: pointer;
+}
+
+.SupLogin {
+    background-image: url("../images/SuploginBg.png");
+    background-repeat: no-repeat;
+    float: right;
+    height: 334px;
+    width: 386px;
+	padding-top: 36px;
+}
+
+.SupLogin input
+{
+	background-color: transparent;
+    background-image: url("../images/SupLoginInputBg.png");
+    background-repeat: no-repeat;
+    border: medium none;
+    height: 28px;
+    margin-bottom: 8px;
+    margin-right: 40px;
+    padding-right: 10px;
+    width: 220px;
+}
+
+.SupLoginSubmit
+{
+	background-image: url("../images/SupRegSndBg.png");
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-size: 22px;
+    height: 38px;
+    margin-right: 38px;
+    margin-top: 16px;
+    padding-top: 6px;
+    text-align: center;
+    width: 233px;
+	cursor: pointer;
+}
+/*/////////////////////////////////END OF SUPPLIER PAGE LOGIN AND REGISTER*/
+
+/*/////////////////////////////////Appraiser PAGE LOGIN AND REGISTER*/
+.eLoginAndRegTitle
+{
+	font-size: 22px;
+    padding-right: 20px;
+}
+
+.eLoginAndRegDesc {
+    float: right;
+    margin-bottom: 10px;
+    margin-top: 34px;
+    width: 374px;
+}
+
+.eLoginAndReg
+{
+	background-color: #F4F4F4;
+    border: 1px solid #D7D7D7;
+    height: 548px;
+    margin: 84px auto 0;
+    width: 914px;
+}
+
+.SupRegister {
+    background-image: url("../images/SupRegisterBg.png");
+    background-repeat: no-repeat;
+    height: 510px;
+    margin-right: 36px;
+    margin-top: 35px;
+    width: 416px;
+	padding-top: 36px;
+	float: right;
+}
+
+.SupRegister input
+{
+	background-color: transparent;
+    background-image: url("../images/SupLoginInputBg.png");
+    background-repeat: no-repeat;
+    border: medium none;
+    height: 28px;
+    margin-bottom: 8px;
+    margin-right: 65px;
+    padding-right: 10px;
+    width: 220px;
+}
+
+.SupRegSubmit
+{
+	background-image: url("../images/SupRegSndBg.png");
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-size: 22px;
+    height: 38px;
+    margin-right: 62px;
+    margin-top: 16px;
+    padding-top: 6px;
+    text-align: center;
+    width: 233px;
+	cursor: pointer;
+}
+
+.SupLogin {
+    background-image: url("../images/SuploginBg.png");
+    background-repeat: no-repeat;
+    float: right;
+    height: 334px;
+    width: 386px;
+	padding-top: 36px;
+}
+
+.SupLogin input
+{
+	background-color: transparent;
+    background-image: url("../images/SupLoginInputBg.png");
+    background-repeat: no-repeat;
+    border: medium none;
+    height: 28px;
+    margin-bottom: 8px;
+    margin-right: 40px;
+    padding-right: 10px;
+    width: 220px;
+}
+
+.SupLoginSubmit
+{
+	background-image: url("../images/SupRegSndBg.png");
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-size: 22px;
+    height: 38px;
+    margin-right: 38px;
+    margin-top: 16px;
+    padding-top: 6px;
+    text-align: center;
+    width: 233px;
+	cursor: pointer;
+}
+/*/////////////////////////////////END OF Appraiser PAGE LOGIN AND REGISTER*/
+
+/*/////////////////////////////////Appraiser PAGE*/
+.AppraiserMain
+{
+	background-color: #F4F4F4;
+    border: 1px solid #D7D7D7;
+    height: 548px;
+    margin: 84px auto 0;
+    width: 914px;
+}
+
+.AppraiserReports
+{
+    float: right;
+    margin-left: 30px;
+    margin-top: 162px;
+}
+
+.AppraiserNewReports
+{
+    float: right;
+    margin-top: 162px;
+}
+/*/////////////////////////////////END OF Appraiser PAGE*/
+
+
+/*/////////////////////////////////ABOUT PAGE*/
+.eAboutTitle
+{
+	font-size: 22px;
+    padding-right: 20px;
+}
+	
+.eAbout
+{
+	background-color: #F4F4F4;
+    border: 1px solid #D7D7D7;
+    min-height: 548px;
+    margin: 22px auto 0;
+    width: 936px;
+}
+
+.eAboutDesc
+{
+	margin: 30px auto 0;
+    width: 850px;
+}
+/*/////////////////////////////////END OF ABOUT PAGE*/
+
+/*/////////////////////////////////Regulations PAGE*/
+.eRegulationsTitle
+{
+	font-size: 22px;
+    padding-right: 20px;
+}
+
+.eRegulations
+{
+	background-color: #F4F4F4;
+    border: 1px solid #D7D7D7;
+    min-height: 548px;
+    margin: 22px auto 0;
+    width: 937px;
+}
+
+.eRegulationsDesc
+{
+	margin: 30px auto 0;
+    width: 850px;
+}
+/*/////////////////////////////////END OF Regulations PAGE*/
+
+/*/////////////////////////////////CONTACT PAGE*/
+.eContactTitle
+{
+	font-size: 22px;
+    padding-right: 20px;
+}
+
+.eContactMain
+{
+	background-color: #F4F4F4;
+    border: 1px solid #D7D7D7;
+    min-height: 548px;
+    margin: 22px auto 0;
+    width: 937px;
+}
+
+.eContact
+{
+	background-image: url("../images/SupRegisterBg.png");
+    background-repeat: no-repeat;
+    float: right;
+    height: 510px;
+    margin-right: 284px;
+    margin-top: 35px;
+    padding-top: 36px;
+    width: 416px;
+}
+
+.eContact input
+{
+	background-color: transparent;
+    background-image: url("../images/SupLoginInputBg.png");
+    background-repeat: no-repeat;
+    border: medium none;
+    height: 18px;
+    margin-bottom: 8px;
+    margin-right: 65px;
+    padding-right: 10px;
+    width: 220px;
+}
+
+.eContact textarea
+{
+	margin-right: 64px;
+    resize: none;
+    width: 225px;
+}
+/*/////////////////////////////////END OF CONTACT PAGE*/
+
+
+
+
+
+
+

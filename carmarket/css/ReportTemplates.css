@@ -1,0 +1,35 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+.cleared
+{
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+.TemplatesCover
+{
+	direction: rtl;
+}
+
+.Template
+{
+
+}
+
+.TemplateTitle
+{
+
+}
+
+.Templatedesc
+{
+	display:none;
+}
+
+.TemplateTitle
+{
+	cursor:pointer;
+}
